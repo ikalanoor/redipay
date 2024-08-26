@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code de Téléchargement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: inline-block;
+        }
+        h1 {
+            color: #333;
+        }
+        .code {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Félicitations !</h1>
+        <p>Voici votre code de téléchargement :</p>
+        <div class="code" id="downloadCode"></div>
+    </div>
+
+    <script>
+        // Liste des codes de téléchargement
+        const codes = [
+            'X7MMLNV', 'EHRLJZW', 'RTJSFW3', 'CUB2RS5', 'L5MD92J',
+            'AU8RBNA', '4CZU9W5', 'KDC7H48', 'Z78FPMQ', 'CMJ9GSX',
+            'P8TKQPR', 'M5T9FYH', '8QGPK6M', '4E5WYX6', 'MFPYNE4',
+            'MCTZAVT', 'R9XXK6S', '5KM2CFK', '2GBHH46', '4AF86TN',
+            '8PXDT9R', '6SPUMD6', '7ZZHY39', 'GMBGFS2', 'LZL3THX',
+            'DVR5D2A', 'Q7RZ7US', 'V6JWSNR', '9UQFMRH', '9A8UFXA',
+            'JX5L4MM', 'RHJ6E4X', '9YG4MA2', '4E3B72F', 'S73D7V6',
+            'J3VC4CA', 'TSCZGE2', 'D2HKRS7', 'MEHYDYB', '6J9E8T4',
+            '8NSPMZT', '8WLL3PM', '5H7CEYH', 'X75US8J', 'B53J34N',
+            'CGSQCS9', 'LHN8E2T', 'MGEP5C9', '3GTHLM7', 'KDFYUXL',
+            'KMNH8HK', 'AGM9H5X', '2H88KJ6', 'FLG6HK2', '55MKJSR',
+            '97Y2P6Q', '44AVKDE', 'EKKT8F3', '7X93U5M', '38PKPW7',
+            'FV6G3WB', '2RK2W4R', 'KX6FTED', 'WNB84KP', '9SDX83A',
+            'CUMRQRP', 'PA54UYK', '9ULRR9Q', 'HFLHR9X', '7XMBZFE',
+            'JHPN4X8', 'SBCZLRP', 'S5PA8V2', 'KR96SNA', 'PAXAPMJ',
+            'QX6WHGA', 'RG5MWX8', 'RP5ZWV8', 'XDRTSWA', '4MAEZ7K',
+            'S7MHVRZ', 'TPVFS2H', 'Q8ZJ7K8', 'VLUGD22', 'LF7U4MD',
+            'ZCX42PX', 'S6ZPBXR', 'X8U36MN', '42X3G6J', '76H6YUG',
+            'DYZXMAV', 'F9YS5WS', '6H9U6PH', '4XDM97D', 'DA2Y4B3',
+            'XP8LK8M', 'XYTQZUX', '9E7DTT2', 'FAY4FZA', 'RG3PQF3',
+            'NQ8L2LX', 'P5USXP6', 'X9B9JMR', 'YKPJMW3', 'E87NPR6',
+            'ZUY22ZD', 'EGS64AK', 'P54JYS4', 'W7P3S22', 'XZT4W7Q',
+            'ER9XP6Q', 'MC9NWYH', '3MA6SAQ', 'U4P8JWD', 'VFX85X9',
+            '4L9LAX8', 'DT94HGP', 'RTE4T5F', 'YY3K2VN', 'CU8D27D',
+            'RURHLNM', 'S3K5FGM', 'PXHE3EG', 'ZJYDFKF', 'G5EEC6M',
+            'ZLPFJUC', '9FWWL3Q', 'QPUQZYC', 'Z5SB3D7', 'C7LPLVJ',
+            'P8CXQMR', 'KTLU94J', 'M4ELRHP', '5B3V34J', 'X8Y7VL2',
+            '8PTTH95', 'TEVZ85X', '9X9GQDA', 'ZVTLNUS', '4UEVRZT',
+            'FFR5W2F', '8EKPF8G', 'D9ZNUJ8', 'C2XQFNA', '8DQ95CS',
+            'WJE2PW2', 'FZX36RM', 'MVQZ5X5', 'DA2APES', 'Z9J9T2E'
+        ];
+
+        // Fonction pour générer un code aléatoire
+        function getRandomCode() {
+            const randomIndex = Math.floor(Math.random() * codes.length);
+            return codes[randomIndex];
+        }
+
+        // Afficher le code aléatoire sur la page
+        document.getElementById('downloadCode').textContent = getRandomCode();
+    </script>
+</body>
+</html>
